@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nav ul {
+    text-decoration: none;
+    list-style: none;
+
+    display: flex;
+    width: 100%;
+    max-width: 425px;
+    justify-content: space-between;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login {
+    padding: 20px;
+    border-radius: 21px;
+    background: #7165e2;
+
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}

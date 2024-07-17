@@ -1,0 +1,15 @@
+:root {
+    font-family: "Manrope", sans-serif;
+
+    color: #ffffff;
+    background-color: #080808;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

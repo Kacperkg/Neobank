@@ -1,0 +1,15 @@
+.header {
+    min-height: 100svh;
+}
+
+.heading {
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    max-width: 17ch;
+    text-align: left;
+}
+
+.openAccount
