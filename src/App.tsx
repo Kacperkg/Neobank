@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
+import Track from "./components/Track";
 
 export default function App() {
     return (
@@ -11,6 +12,7 @@ export default function App() {
             <Nav />
             <Header />
             <AppDemo />
+            <Track />
             <Products />
             <Footer />
         </>

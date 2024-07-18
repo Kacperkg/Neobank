@@ -1,0 +1,115 @@
+.track {
+    min-height: 100svh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview {
+    position: relative;
+
+    width: 490px;
+    height: 527.92px;
+}
+
+.glass {
+    position: absolute;
+    width: 490px;
+    height: 527.923px;
+    flex-shrink: 0;
+
+    border-radius: 64px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.trackBoard {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -100px;
+    z-index: 5;
+}
+
+.miniLogo {
+    position: absolute;
+    z-index: 99;
+    left: -50px;
+    bottom: 0;
+}
+
+.blur1 {
+    width: 462px;
+    height: 462px;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -20%;
+    left: 0;
+    right: 0;
+
+    border-radius: 462px;
+    opacity: 0.05;
+    background: #8072ff;
+    filter: blur(125px);
+    z-index: -1;
+}
+
+.blur2 {
+    width: 462px;
+    height: 462px;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+
+    border-radius: 462px;
+    opacity: 0.05;
+    background: #8072ff;
+    filter: blur(125px);
+    z-index: -1;
+}
+
+.text {
+    max-width: 680px;
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 24px;
+}
+
+.text h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+
+    opacity: 0.4;
+
+    margin-bottom: 40px;
+}
+
+.text button {
+    border-radius: 29px;
+    background: #ebdd51;
+
+    padding: 30px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+}
