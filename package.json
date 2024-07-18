@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Kacperkg.github.io/Neobank/",
+  "homepage": "https://kacperkg.github.io/Neobank/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
