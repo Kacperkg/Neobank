@@ -1,0 +1,150 @@
+.products {
+    margin-inline: auto;
+    min-height: 100svh;
+    max-width: 1112px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.selector {
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    gap: 10px;
+
+    border-radius: 21px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.selector p {
+    padding: 12px 31px;
+    border-radius: 21px;
+}
+
+.active {
+    background: #fff;
+    color: #000;
+}
+
+.productContainer {
+    position: relative;
+    width: 100%;
+    height: 504px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    margin-top: 60px;
+
+    border-radius: 31px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.productItem {
+    padding-block: 40px;
+
+    text-align: left;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Add border-right */
+}
+
+.productItem:last-child {
+    border: none;
+}
+
+.productWrapper {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productItem h1 {
+    margin-bottom: 32px;
+    max-width: 252px;
+}
+
+.productItem button {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 252px;
+    margin-top: 40px;
+
+    border-radius: 29px;
+    border: 1px solid #ebdd51;
+}
+
+.productItem p svg {
+    margin-right: 8px;
+}
+
+.productItem button:hover {
+    color: #000;
+    border-radius: 29px;
+    border: 1px solid #ebdd51;
+    background: #ebdd51;
+}
+
+.inline {
+    gap: 10px;
+    display: flex;
+}
+
+.points {
+    max-width: 252px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.purple {
+    color: #7467e6;
+}
+
+.yellow {
+    color: #eddf51;
+}
+
+.brown {
+    color: #dba1a0;
+}
+
+.purpleBlur {
+    left: 33.33%;
+    top: 20%;
+    position: absolute;
+
+    border-radius: 569px;
+    opacity: 0.1;
+    background: #8072ff;
+    filter: blur(125px);
+
+    width: 569px;
+    height: 569px;
+
+    z-index: -1;
+}

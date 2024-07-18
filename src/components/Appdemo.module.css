@@ -1,0 +1,166 @@
+.appDemo {
+    min-height: 100svh;
+
+    background: rgba(8, 8, 8, 0.06);
+    backdrop-filter: blur(50px);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    max-width: 693px;
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.text > h4 {
+    opacity: 0.4;
+
+    max-width: 515px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+
+    margin-bottom: 40px;
+}
+
+.options {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    width: 693px;
+    height: 211px;
+
+    border-radius: 31px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding-block: 40px;
+    padding-inline: 50px;
+}
+
+.options h4 {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 166.667% */
+}
+
+.online h4 {
+    max-width: 7ch;
+}
+
+.financial {
+    max-width: 17ch;
+}
+
+.invoice {
+    max-width: 13ch;
+}
+
+.options li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.options li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    color: #ebdd51;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.preview {
+    position: relative;
+
+    width: 490px;
+    height: 527.92px;
+}
+
+.glass {
+    position: absolute;
+    width: 490px;
+    height: 527.923px;
+    flex-shrink: 0;
+
+    border-radius: 64px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+.preview img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -58px;
+    z-index: 5;
+}
+
+.blur1 {
+    width: 462px;
+    height: 462px;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -20%;
+    left: 0;
+    right: 0;
+
+    border-radius: 462px;
+    opacity: 0.1;
+    background: #ecb4b3;
+    filter: blur(125px);
+    z-index: -1;
+}
+
+.blur2 {
+    width: 462px;
+    height: 462px;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+
+    border-radius: 462px;
+    opacity: 0.1;
+    background: #ecb4b3;
+    filter: blur(125px);
+    z-index: -1;
+}
+
+.seperator {
+    content: "";
+    height: 211px;
+    margin: -40px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
