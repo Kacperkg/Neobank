@@ -1,11 +1,13 @@
 .appDemo {
     min-height: 100svh;
 
-    background: rgba(8, 8, 8, 0.06);
-    backdrop-filter: blur(50px);
-
     display: flex;
+    margin-inline: auto;
     justify-content: space-between;
+    align-items: center;
+
+    max-width: 1280px;
+    width: 100%;
 }
 
 .text {

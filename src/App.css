@@ -1,5 +1,49 @@
 #root {
-    max-width: 1280px;
+    max-width: 1680px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+}
+
+.header-img {
+    z-index: -5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.svg-img {
+    right: 0;
+    position: absolute;
+    z-index: -5;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.header-blur-1 {
+    position: absolute;
+    left: -462px;
+    top: -150px;
+
+    width: 462px;
+    height: 462px;
+    flex-shrink: 0;
+    border-radius: 462px;
+    opacity: 0.2;
+    background: #ecb4b3;
+    filter: blur(125px);
+}
+
+.header-blur-2 {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    width: 223px;
+    height: 224px;
+    background-color: #f9e94d;
+    opacity: 0.2;
+    filter: blur(60px);
 }

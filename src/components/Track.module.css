@@ -1,7 +1,13 @@
 .track {
     min-height: 100svh;
+
     display: flex;
+    margin-inline: auto;
     justify-content: space-between;
+    align-items: center;
+
+    max-width: 1280px;
+    width: 100%;
 }
 
 .preview {
