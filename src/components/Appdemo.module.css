@@ -1,5 +1,6 @@
 .appDemo {
     min-height: 100svh;
+    margin-top: -20svh;
 
     display: flex;
     margin-inline: auto;

@@ -47,3 +47,15 @@ button {
     opacity: 0.2;
     filter: blur(60px);
 }
+
+.app-demo-bg {
+    background: rgba(8, 8, 8, 0.06);
+    backdrop-filter: blur(50px);
+
+    width: 100%;
+    min-height: 100svh;
+    position: absolute;
+    margin-top: -250px;
+
+    z-index: -4;
+}

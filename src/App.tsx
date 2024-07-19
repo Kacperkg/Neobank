@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
+import Talk from "./components/Talk";
 import Track from "./components/Track";
 
 export default function App() {
@@ -26,9 +27,11 @@ export default function App() {
             </svg>
             <Nav />
             <Header />
+            <div className="app-demo-bg"></div>
             <AppDemo />
             <Track />
             <Products />
+            <Talk />
             <Footer />
         </>
     );
