@@ -87,3 +87,21 @@
     height: 224px;
     flex-shrink: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .talk {
+        margin-inline: auto;
+        min-height: 100svh;
+        max-width: 90vw;
+
+        align-items: center;
+    }
+
+    .talkWrapper img {
+        max-width: 90vw;
+    }
+
+    .text {
+        top: 300px;
+    }
+}

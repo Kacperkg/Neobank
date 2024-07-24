@@ -17,7 +17,7 @@
 }
 
 .text h1 {
-    font-size: 50px;
+    font-size: clamp(40px, 8vw, 50px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -166,4 +166,88 @@
     margin: -40px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .appDemo {
+        max-width: 90vw;
+        flex-direction: column-reverse;
+    }
+
+    .preview {
+        min-height: 100svh;
+        max-width: 300px;
+    }
+
+    .preview img {
+        margin-top: 0;
+    }
+
+    .text {
+        min-height: 100svh;
+    }
+
+    .text h1 {
+        max-width: 90vw;
+    }
+
+    .options {
+        margin-inline: auto;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 400px;
+
+        padding-inline: 0;
+    }
+
+    .options li {
+        padding-inline: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        height: auto;
+        padding-inline: 40px;
+    }
+
+    .online h4 {
+        max-width: fit-content;
+    }
+
+    .seperator {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+
+    .online {
+        max-width: 100%;
+    }
+
+    .financial {
+        max-width: 100%;
+    }
+
+    .financial h4 {
+        max-width: 13ch;
+    }
+
+    .invoice {
+        max-width: 100%;
+    }
+
+    .glass {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blur1 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blur2 {
+        width: 100%;
+        max-width: 300px;
+    }
 }

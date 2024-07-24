@@ -11,7 +11,7 @@
 }
 
 .heading {
-    font-size: 90px;
+    font-size: clamp(58px, 8vw, 90px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -32,4 +32,19 @@
 
     border-radius: 29px;
     background: #ebdd51;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        max-width: 90vw;
+    }
+
+    .heading {
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        max-width: 17ch;
+        text-align: left;
+    }
 }

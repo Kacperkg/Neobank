@@ -89,7 +89,7 @@
 }
 
 .text h1 {
-    font-size: 50px;
+    font-size: clamp(40px, 8vw, 50px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -118,4 +118,39 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 112.5% */
+}
+
+@media only screen and (max-width: 600px) {
+    .track {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .text {
+        min-height: 80svh;
+    }
+
+    .preview {
+        min-height: 80svh;
+        max-width: 300px;
+    }
+
+    .glass {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blur1 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blur2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .miniLogo {
+        bottom: 150px;
+    }
 }

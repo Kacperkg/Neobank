@@ -81,3 +81,34 @@
     list-style: none;
     margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer img {
+        margin-left: 5vw;
+    }
+
+    .contact {
+        margin-left: 5vw;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .seperator {
+        max-width: 100vw;
+    }
+
+    .copyright {
+        align-items: start;
+        margin-left: 5vw;
+        max-width: 90vw;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .links {
+        align-items: start;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

@@ -6,6 +6,8 @@
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+
+    overflow-x: hidden;
 }
 
 * {
