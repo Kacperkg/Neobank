@@ -3,6 +3,8 @@
     min-height: 100svh;
     max-width: 1112px;
     margin-inline: auto;
+
+    position: relative;
 }
 
 .header {
@@ -12,7 +14,7 @@
 }
 
 .header h1 {
-    font-size: 50px;
+    font-size: clamp(36px, 8vw, 50px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -21,6 +23,8 @@
 .selector {
     height: fit-content;
     width: fit-content;
+
+    cursor: pointer;
 
     display: flex;
     gap: 10px;
@@ -135,12 +139,10 @@
 }
 
 .purpleBlur {
-    left: 33.33%;
-    top: 20%;
     position: absolute;
 
     border-radius: 569px;
-    opacity: 0.1;
+    opacity: 0.2;
     background: #8072ff;
     filter: blur(125px);
 
@@ -150,8 +152,108 @@
     z-index: -1;
 }
 
+.indicatorsCorp {
+    display: none;
+}
+
+.indicatorsSmall {
+    display: none;
+}
+
+.show {
+    display: grid !important;
+}
+
 @media only screen and (max-width: 600px) {
     .products {
-        min-height: 120svh;
+        min-height: 100svh;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .productContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .productContainer {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .productContainer {
+        height: 100%;
+
+        scroll-snap-type: x mandatory;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        display: flex;
+        gap: 100px;
+
+        margin-top: 60px;
+
+        border-radius: 0;
+        border: none;
+    }
+
+    .productContainer > .productItem {
+        scroll-snap-align: center;
+    }
+
+    .productItem {
+        padding-block: 40px;
+
+        text-align: left;
+
+        border-right: none;
+    }
+
+    .productWrapper {
+        width: 100vw;
+    }
+
+    .productItem h1 {
+        margin-bottom: 32px;
+        max-width: 344px;
+        text-align: center;
+    }
+
+    .points {
+        max-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .purpleBlur {
+        top: 300px;
+
+        width: 300px;
+        height: 300px;
+    }
+
+    .indicatorsSmall {
+        margin-top: 50px;
+        margin-inline: auto;
+
+        width: 100px;
+        height: 50px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .indicatorsSmall > div {
+        place-content: "";
+
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: white;
     }
 }
